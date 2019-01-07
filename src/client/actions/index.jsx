@@ -1,3 +1,7 @@
+import postsAction from "./posts";
+
+export const getPosts = postsAction;
+
 export const toggleCheck = () => {
   return {
     type: "TOGGLE_CHECK"
@@ -36,3 +40,5 @@ export const selectOption = value => {
     value
   };
 };
+
+

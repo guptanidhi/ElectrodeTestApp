@@ -1,4 +1,6 @@
 import { combineReducers } from "redux";
+import postsReducer from "./posts";
+
 
 const checkBox = (store, action) => {
   if (action.type === "TOGGLE_CHECK") {
@@ -58,5 +60,6 @@ export default combineReducers({
   number,
   username,
   textarea,
-  selectedOption
+  selectedOption,
+  posts: postsReducer
 });

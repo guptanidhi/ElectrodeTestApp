@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 import Home from "./components/home";
 import PagewithProps from "./components/pageWithProps";
 // import Demo1 from "./components/demo1";
-// import Demo2 from "./components/demo2";
+import Posts from "./components/posts";
 import { withRouter } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
+
 
 const Root = ({ route, children }) => {
   return (
@@ -36,6 +37,11 @@ const routes = [
         path: "/pageWithProps",
         exact: true,
         component: PagewithProps
+      },
+      {
+        path: "/posts",
+        exact: true,
+        component: Posts
       }
     ]
   }
