@@ -41,7 +41,8 @@ const routes = [
       {
         path: "/posts",
         exact: true,
-        component: Posts
+        component: Posts,
+        init: "./init-posts"
       }
     ]
   }

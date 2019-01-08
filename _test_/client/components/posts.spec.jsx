@@ -7,13 +7,12 @@ import thunkMiddleware from "redux-thunk";
 
 //import rootReducer from "../../../src/client/reducers/index";
 import Posts from "../../../src/client/components/posts";
-import initTop from "../../../src/server/routes/init-top";
 import {getPosts} from "../../../src/client/actions/index";
+import reducer from "../../../src/client/reducers/index";
 
-const initRdcr = initTop();
 
 const store = createStore(
-  initRdcr.reducer,
+  reducer,
   {},
   applyMiddleware(thunkMiddleware)
 );
@@ -41,7 +40,5 @@ describe("Posts component", () => {
     expect(component.find(".posts")).toHaveLength(0);
   });
   console.log(component.html());
-
-
 
 });
