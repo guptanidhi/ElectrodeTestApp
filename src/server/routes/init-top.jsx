@@ -16,6 +16,7 @@ export default async function initTop(options) {
     }
   };
 
+
   inits.forEach((init) => {
     initData.initialState = {...initData.initialState, ...init.initialState};
   });

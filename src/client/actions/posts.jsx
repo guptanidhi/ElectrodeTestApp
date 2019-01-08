@@ -3,6 +3,7 @@ import fetch  from "isomorphic-fetch";
 
 export default () => {
   return dispatch => {
+
     return fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response: {}) => {
         if (response.status >= 400) {

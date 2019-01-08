@@ -11,6 +11,7 @@ import {getPosts} from "../../../src/client/actions/index";
 import reducer from "../../../src/client/reducers/index";
 
 
+
 const store = createStore(
   reducer,
   {},

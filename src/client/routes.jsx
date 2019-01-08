@@ -17,6 +17,7 @@ const Root = ({ route, children }) => {
   );
 };
 
+
 Root.propTypes = {
   route: PropTypes.object,
   children: PropTypes.object

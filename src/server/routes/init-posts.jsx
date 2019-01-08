@@ -20,6 +20,7 @@ export default async function initPosts() {
     posts = data;
   });
 
+
   const options = {
     initialState: {
       posts: []

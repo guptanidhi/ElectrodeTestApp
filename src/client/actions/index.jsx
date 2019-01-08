@@ -1,5 +1,6 @@
 import postsAction from "./posts";
 
+
 export const getPosts = postsAction;
 
 export const toggleCheck = () => {

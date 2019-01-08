@@ -40,6 +40,7 @@ class Posts extends React.Component<Props> {
   }
 }
 
+
 export default connect(
   state => {
     return {

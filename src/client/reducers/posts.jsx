@@ -3,6 +3,7 @@ export default (store: Object, action: {type: "POSTS", payload:[]}) => {
     return action.payload;
   }
 
+
   return store || [];
 };
 

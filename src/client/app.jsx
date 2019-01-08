@@ -33,6 +33,7 @@ require.ensure(
 //
 // Redux configure store with Hot Module Reload
 //
+
 const configureStore = initialState => {
   const store = createStore(rootReducer, initialState, applyMiddleware(thunkMiddleware));
 
